@@ -76,6 +76,14 @@ function Home() {
                 {venue.name}
               </h3>
               <p className="mt-2 text-sm text-[var(--ink-soft)]">{venue.address}</p>
+              <a
+                href={venue.mapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm font-medium text-[var(--matcha-deep)] underline underline-offset-2 hover:text-[var(--strawberry-deep)]"
+              >
+                View on Google Maps ↗
+              </a>
             </div>
           ))}
         </section>
