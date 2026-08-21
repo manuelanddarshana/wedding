@@ -29,8 +29,7 @@ function Travel() {
           Travel &amp; FAQ
         </h1>
         <p className="rise rise-3 mt-4 text-[var(--ink-soft)]">
-          Everything for getting to Guwahati, staying on afterwards, and the
-          paperwork in between.
+          Getting to Guwahati and staying on afterwards
         </p>
 
         <Section title="After the wedding">
@@ -46,23 +45,21 @@ function Travel() {
 
         <Section title="Accommodation">
           <p>
-            We are booking accommodation for the four main wedding nights,
-            5–9 February: close to the Kalita home for the first two nights,
-            then within Aroohan Serenity Resort or close by for the nights
-            around the wedding day. Happy to help with the night of the 9th
-            depending on your plans.
+            We are booking accommodation for the four main wedding nights (
+            5–9 February), two nights close to the Kalita home and then within Aroohan Serenity Resort or close by for the nights
+            around the wedding day. We are also happy to help with arranging accomodation before/after the wedding depending on your plans.
           </p>
         </Section>
 
         <Section title="Getting there">
           <p>
             Guwahati has many daily flights from major hubs, especially Delhi.
-            The best approach is booking a return flight to Delhi — via Air
-            India or Lufthansa, usually cheaper as a package — and booking the
+            The best approach is booking a return flight to Delhi (via Air
+            India or Lufthansa, usually cheaper if you book a return trip) and booking the
             Delhi–Guwahati leg separately depending on your stopover.
           </p>
           <p>
-            From Frankfurt, budget roughly 600€ for the Delhi flight and 150€
+            From Frankfurt, we usually pay around 600€ for the Delhi flight and 150€
             for the Guwahati leg. Booking 2–3 months ahead is usually enough,
             though it depends a little on the situation in the Middle East.
           </p>
@@ -72,7 +69,7 @@ function Travel() {
           <p>
             Foreigners need a visa. With a German passport, this can be
             applied for online as an e-Visa and is granted on arrival. The
-            official website is a bit clunky but manageable — watch out for
+            official website is a bit painful to navigate (especially uploading the photo and payment processing), but it's doable. Watch out for
             scam sites and third-party providers, they are not necessary.
           </p>
           <a
@@ -88,8 +85,8 @@ function Travel() {
         <Section title="Weather">
           <p>
             Sunny and warm during the day in Guwahati, around 25–27°C, and
-            mild at night — a light jacket is enough. Shillong is cooler,
-            around 10–18°C at night, so pack something warmer for Meghalaya.
+            mild at night (also see dresscode recommendations). Shillong is cooler,
+            and can be quite cold at night, so pack something warmer for Meghalaya.
           </p>
         </Section>
 
