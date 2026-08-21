@@ -3,7 +3,7 @@ import { SiteNav } from '@/components/SiteNav'
 import { SiteFooter } from '@/components/SiteFooter'
 import { LeafSprig } from '@/components/Motifs'
 import { Section } from '@/components/Section'
-import { events } from '@/data/wedding'
+import { events, dressCodeNotes } from '@/data/wedding'
 
 export const Route = createFileRoute('/events')({
   component: Events,
@@ -29,16 +29,38 @@ function Events() {
           Events &amp; Dress Code
         </h1>
         <p className="rise rise-3 mt-4 text-[var(--ink-soft)]">
-          Dress code details are still being finalised — this page will fill
-          in over time. For now, here's what's happening when.
+          A rough guide per event, with a Pinterest board for inspiration.
+          Two things to keep in mind throughout:
         </p>
+
+        <div className="rise rise-4 mt-6 grid gap-4 sm:grid-cols-2">
+          {dressCodeNotes.map((note) => (
+            <div
+              key={note}
+              className="rounded-2xl border border-[var(--strawberry-soft)] bg-[var(--strawberry-mist)] p-5 text-sm text-[var(--ink-soft)]"
+            >
+              {note}
+            </div>
+          ))}
+        </div>
 
         {events.map((event) => (
           <Section key={event.title} title={event.title}>
-            <p>
+            <p className="text-sm text-[var(--ink-soft)]">
               {event.date} · {event.time} · {event.place}
             </p>
-            <p>{event.dressCode}</p>
+            <p className="font-display text-lg text-[var(--strawberry-deep)]">
+              {event.dressCode}
+            </p>
+            <p>{event.dressCodeDetails}</p>
+            <a
+              href={event.pinterestUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block text-sm font-medium text-[var(--matcha-deep)] underline underline-offset-2 hover:text-[var(--strawberry-deep)]"
+            >
+              See Pinterest inspiration ↗
+            </a>
           </Section>
         ))}
       </main>
