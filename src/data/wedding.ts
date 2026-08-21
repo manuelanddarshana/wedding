@@ -64,7 +64,7 @@ export const schedule: ScheduleItem[] = [
     time: 'Evening',
     title: 'Cocktail Party & Sangeet',
     place: 'Aroohan Serenity Resort',
-    note: 'Dance and music performances — guests very welcome to join in.',
+    note: 'Dance and music performances',
   },
   {
     date: '9 Feb',
@@ -141,7 +141,7 @@ export const events: EventInfo[] = [
 ]
 
 export const meghalayaDetails =
-  'We are organising this one — a bus/car convoy leaving together from Guwahati, with hotels and guides arranged. Waterfalls, caves, and sunrises. Approx. 100–130€ per person.'
+  'We are organising a joint trip with a bus/car convoy leaving together from Guwahati, with hotels and guides arranged. We will explore the beautiful landscape of Meghalaya (home of the clouds), including waterfalls, caves, and sunrises. Costs are not finalized but should be approx. 100–130€ per person.'
 
 export const goaDetails =
-  'Not planned in detail yet — probably your own stay, though we may settle on a shared beach/area together depending on how many people join.'
+  'Not planned in detail yet. We will probably settle on a shared beach/area together depending on how many people join.'
