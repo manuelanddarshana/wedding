@@ -165,5 +165,10 @@ export const events: EventInfo[] = [
 export const meghalayaDetails =
   'We are organising a joint trip with a bus/car convoy leaving together from Guwahati, with hotels and guides arranged. We will explore the beautiful landscape of Meghalaya (home of the clouds), including waterfalls, caves, and sunrises. Costs are not finalized but should be approx. 100–130€ per person.'
 
+export const meghalayaPinterestUrl =
+  'https://www.pinterest.de/sciencebyteswithliza/meghalaya-2027/'
+
 export const goaDetails =
   'Not planned in detail yet. We will probably settle on a shared beach/area together depending on how many people join.'
+
+export const goaPinterestUrl = 'https://www.pinterest.de/sciencebyteswithliza/goa/'

@@ -3,7 +3,15 @@ import { SiteNav } from '@/components/SiteNav'
 import { SiteFooter } from '@/components/SiteFooter'
 import { LeafSprig } from '@/components/Motifs'
 import { Section } from '@/components/Section'
-import { rsvpUrl, visaUrl, meghalayaDetails, goaDetails } from '@/data/wedding'
+import { PinterestBoard } from '@/components/PinterestBoard'
+import {
+  rsvpUrl,
+  visaUrl,
+  meghalayaDetails,
+  meghalayaPinterestUrl,
+  goaDetails,
+  goaPinterestUrl,
+} from '@/data/wedding'
 
 export const Route = createFileRoute('/travel')({
   component: Travel,
@@ -37,10 +45,28 @@ function Travel() {
             <strong className="text-[var(--ink)]">10–13 February — Meghalaya:</strong>{' '}
             {meghalayaDetails}
           </p>
-          <p>
+          <PinterestBoard url={meghalayaPinterestUrl} />
+          <a
+            href={meghalayaPinterestUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-sm font-medium text-[var(--matcha-deep)] underline underline-offset-2 hover:text-[var(--strawberry-deep)]"
+          >
+            Open Meghalaya board on Pinterest ↗
+          </a>
+          <p className="pt-4">
             <strong className="text-[var(--ink)]">14 February onward — Goa:</strong>{' '}
             {goaDetails}
           </p>
+          <PinterestBoard url={goaPinterestUrl} />
+          <a
+            href={goaPinterestUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-sm font-medium text-[var(--matcha-deep)] underline underline-offset-2 hover:text-[var(--strawberry-deep)]"
+          >
+            Open Goa board on Pinterest ↗
+          </a>
         </Section>
 
         <Section title="Accommodation">
