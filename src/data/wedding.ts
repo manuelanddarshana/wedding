@@ -118,7 +118,7 @@ export const events: EventInfo[] = [
     dressCode: 'Indian Casual',
     dressCodeDetails:
       'Think bright, festive, and comfortable. This is a relaxed daytime event where henna is applied, so avoid anything precious or tight-fitting on the hands/arms. Flowy dresses, jumpsuits, or Indian-inspired kurtas work well. Flat sandals recommended as seating is often on the floor or low stools.',
-    pinterestUrl: 'https://pin.it/6SkIimBb7',
+    pinterestUrl: 'https://www.pinterest.de/sciencebyteswithliza/mehendihenna/',
   },
   {
     title: 'Welcome Dinner',
@@ -128,7 +128,7 @@ export const events: EventInfo[] = [
     dressCode: 'Smart Casual',
     dressCodeDetails:
       'An easy first-night mixer. Think "nice dinner out": maxi dresses or button-down with trousers, no tie required. This is a good event to ease into Indian-inspired fabrics (printed maxis, a nice kurta set, salwar kameez sets, sharara sets) without needing full traditional wear.',
-    pinterestUrl: 'https://pin.it/24cfHruOC',
+    pinterestUrl: 'https://www.pinterest.de/sciencebyteswithliza/welcome-dinner/',
   },
   {
     title: 'Haldi and Games',
@@ -138,7 +138,7 @@ export const events: EventInfo[] = [
     dressCode: 'Yellow & Bright Colors',
     dressCodeDetails:
       'Haldi (turmeric) is the color of the day, so lean into yellow — mustard, sunflower, marigold — along with other bright, festive shades like orange, coral, or fuchsia. Cotton or other washable fabrics over silk. Flat, comfortable shoes, since seating is often on the floor.',
-    pinterestUrl: 'https://pin.it/2hJSD7iUx',
+    pinterestUrl: 'https://www.pinterest.de/sciencebyteswithliza/haldi/',
   },
   {
     title: 'Traditional Assamese Wedding',
@@ -148,7 +148,7 @@ export const events: EventInfo[] = [
     dressCode: 'Formal Traditional / Indian Formal Attire Encouraged',
     dressCodeDetails:
       "This is the main ceremony — more formal and culturally rooted. Guests are welcome (and encouraged) to wear Indian formalwear if they'd like to participate in the spirit: sarees, salwar suits, or kurta-pajamas, or even the traditional Assamese mekhela sador, can often be rented or bought locally — or a modest, elegant Western outfit works too (below-knee or maxi length). Avoid complete white (traditionally associated with mourning in Hindu tradition). Comfortable shoes are a requirement as the ceremonies can run long.",
-    pinterestUrl: 'https://pin.it/7u3PZsdHx',
+    pinterestUrl: 'https://www.pinterest.de/sciencebyteswithliza/wedding-day/',
   },
   {
     title: 'Cocktail Party & Sangeet',
@@ -158,7 +158,7 @@ export const events: EventInfo[] = [
     dressCode: 'Indian Glam / Black Tie Optional',
     dressCodeDetails:
       'The big celebratory finale, you need to dress to dance. Think sparkle, sequins, jewel tones, or a fun Indian fusion look (a sharara set, a sequined gown, a statement Indo-western outfit). Suits or bold cocktail dresses are equally welcome. This is the event to go all out.',
-    pinterestUrl: 'https://pin.it/3jlhcTtj3',
+    pinterestUrl: 'https://www.pinterest.de/sciencebyteswithliza/sangeet-and-cocktail/',
   },
 ]
 

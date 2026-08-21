@@ -3,6 +3,7 @@ import { SiteNav } from '@/components/SiteNav'
 import { SiteFooter } from '@/components/SiteFooter'
 import { LeafSprig } from '@/components/Motifs'
 import { Section } from '@/components/Section'
+import { PinterestBoard } from '@/components/PinterestBoard'
 import { events, dressCodeNotes } from '@/data/wedding'
 
 export const Route = createFileRoute('/events')({
@@ -53,13 +54,14 @@ function Events() {
               {event.dressCode}
             </p>
             <p>{event.dressCodeDetails}</p>
+            <PinterestBoard url={event.pinterestUrl} />
             <a
               href={event.pinterestUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-block text-sm font-medium text-[var(--matcha-deep)] underline underline-offset-2 hover:text-[var(--strawberry-deep)]"
             >
-              See Pinterest inspiration ↗
+              Open board on Pinterest ↗
             </a>
           </Section>
         ))}
