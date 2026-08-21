@@ -53,6 +53,12 @@ function Home() {
             >
               Travel &amp; FAQ
             </Link>
+            <Link
+              to="/events"
+              className="rounded-full border border-[var(--matcha)] px-7 py-3 text-sm font-medium tracking-wide text-[var(--matcha-deep)] transition-colors hover:bg-[var(--matcha-mist)]"
+            >
+              Dress Code
+            </Link>
           </div>
         </section>
 

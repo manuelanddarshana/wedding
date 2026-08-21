@@ -19,18 +19,18 @@ export function SiteNav() {
           Schedule
         </Link>
         <Link
-          to="/events"
-          className="text-[var(--ink-soft)] transition-colors hover:text-[var(--strawberry-deep)]"
-          activeProps={{ className: 'text-[var(--strawberry-deep)]' }}
-        >
-          Dress Code
-        </Link>
-        <Link
           to="/travel"
           className="text-[var(--ink-soft)] transition-colors hover:text-[var(--strawberry-deep)]"
           activeProps={{ className: 'text-[var(--strawberry-deep)]' }}
         >
           Travel &amp; FAQ
+        </Link>
+        <Link
+          to="/events"
+          className="text-[var(--ink-soft)] transition-colors hover:text-[var(--strawberry-deep)]"
+          activeProps={{ className: 'text-[var(--strawberry-deep)]' }}
+        >
+          Dress Code
         </Link>
       </nav>
     </header>
