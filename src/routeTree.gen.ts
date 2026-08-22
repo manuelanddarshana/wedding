@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TravelRouteImport } from './routes/travel'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as EventsRouteImport } from './routes/events'
+import { Route as CultureRouteImport } from './routes/culture'
 
 const TravelRoute = TravelRouteImport.update({
   id: '/travel',
@@ -28,33 +29,42 @@ const EventsRoute = EventsRouteImport.update({
   path: '/events',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CultureRoute = CultureRouteImport.update({
+  id: '/culture',
+  path: '/culture',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/culture': typeof CultureRoute
   '/events': typeof EventsRoute
   '/travel': typeof TravelRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/culture': typeof CultureRoute
   '/events': typeof EventsRoute
   '/travel': typeof TravelRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/culture': typeof CultureRoute
   '/events': typeof EventsRoute
   '/travel': typeof TravelRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/events' | '/travel'
+  fullPaths: '/' | '/culture' | '/events' | '/travel'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/events' | '/travel'
-  id: '__root__' | '/' | '/events' | '/travel'
+  to: '/' | '/culture' | '/events' | '/travel'
+  id: '__root__' | '/' | '/culture' | '/events' | '/travel'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CultureRoute: typeof CultureRoute
   EventsRoute: typeof EventsRoute
   TravelRoute: typeof TravelRoute
 }
@@ -82,11 +92,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EventsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/culture': {
+      id: '/culture'
+      path: '/culture'
+      fullPath: '/culture'
+      preLoaderRoute: typeof CultureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CultureRoute: CultureRoute,
   EventsRoute: EventsRoute,
   TravelRoute: TravelRoute,
 }

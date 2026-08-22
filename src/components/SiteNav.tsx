@@ -32,6 +32,13 @@ export function SiteNav() {
         >
           Dress Code
         </Link>
+        <Link
+          to="/culture"
+          className="text-[var(--ink-soft)] transition-colors hover:text-[var(--strawberry-deep)]"
+          activeProps={{ className: 'text-[var(--strawberry-deep)]' }}
+        >
+          Culture
+        </Link>
       </nav>
     </header>
   )

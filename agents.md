@@ -5,12 +5,15 @@
 TanStack Start app (file-based routing via `@tanstack/react-router`),
 statically prerendered (no server functions, no Node runtime needed —
 see `prerender` in `vite.config.ts`) and deployed to GitHub Pages via
-`.github/workflows/deploy.yml`. Three routes:
+`.github/workflows/deploy.yml`. Four routes:
 
 - `/` (`src/routes/index.tsx`) — hero + wedding schedule + venue cards
 - `/events` (`src/routes/events.tsx`) — per-event dress code info
 - `/travel` (`src/routes/travel.tsx`) — post-wedding trip, accommodation,
   flights, visa, weather, RSVP
+- `/culture` (`src/routes/culture.tsx`) — Assam background and wedding
+  traditions; mostly placeholder sections (title + one-line teaser) as of
+  Aug 2026, real writeups to follow
 
 `src/routes/__root.tsx` sets up the HTML shell and page metadata.
 `src/router.tsx` wires the generated route tree (`src/routeTree.gen.ts`,
@@ -20,10 +23,14 @@ page), so `base` in `vite.config.ts` and `basepath` in `src/router.tsx`
 must stay in sync — both would move to `/` if a custom domain is added.
 
 Content lives in `src/data/wedding.ts` (schedule items, venues + Google
-Maps links, per-event dress code entries, RSVP form URL, e-Visa URL)
-rather than being hardcoded in the route components, so dates or links
-can be updated in one place. `src/components/Section.tsx` is a shared
-title+content block reused by `/events` and `/travel`.
+Maps links, per-event dress code entries, culture section teasers, RSVP
+form URL, e-Visa URL) rather than being hardcoded in the route
+components, so dates or links can be updated in one place.
+`src/components/Section.tsx` is a shared title+content block reused by
+`/events`, `/travel`, and `/culture`. `src/components/PinterestBoard.tsx`
+embeds a Pinterest board via their official `pinit.js` widget (the one
+external script/embed on the site) — used on `/events` and `/travel` for
+outfit/mood-board inspiration, always paired with a plain fallback link.
 
 ## Styling
 

@@ -183,3 +183,39 @@ export const goaDetails =
   'Not planned in detail yet. We will probably settle on a shared beach/area together depending on how many people join.'
 
 export const goaPinterestUrl = 'https://www.pinterest.de/sciencebyteswithliza/goa/'
+
+export type CultureSection = {
+  title: string
+  teaser: string
+}
+
+// Placeholder content for the Assam & Traditions page — teaser line per
+// section, to be filled in with real writeups later.
+export const cultureSections: CultureSection[] = [
+  {
+    title: 'Assam & the Northeast',
+    teaser:
+      "Where Assam sits within India, and how the Northeast differs culturally from what most people picture as \"India.\"",
+  },
+  {
+    title: 'Guwahati & the Brahmaputra',
+    teaser: 'The city hosting the wedding, and the river that shapes it.',
+  },
+  {
+    title: 'Landscape',
+    teaser: 'Tea gardens, the Brahmaputra valley, and the hills toward Meghalaya.',
+  },
+  {
+    title: 'Food & Tea',
+    teaser: 'Assamese culinary tradition, distinct from North and South Indian cuisine.',
+  },
+  {
+    title: 'Bihu & Dance',
+    teaser:
+      "Assam's biggest festival, and the folk dance and music tradition behind our Sangeet performances.",
+  },
+  {
+    title: 'The Assamese Wedding',
+    teaser: 'The rituals and traditions behind the ceremony itself.',
+  },
+]
