@@ -29,16 +29,22 @@ function Culture() {
           Assam &amp; Wedding Traditions
         </h1>
         <p className="rise rise-3 mt-4 text-[var(--ink-soft)]">
-          This page is still being written — for now, here's what we plan to
-          cover.
+          A little context on Assam, Guwahati, and the food — the wedding
+          tradition section is still being written.
         </p>
 
         {cultureSections.map((section) => (
           <Section key={section.title} title={section.title}>
-            <p>{section.teaser}</p>
-            <p className="text-sm italic text-[var(--ink-soft)]">
-              To be filled in.
-            </p>
+            {section.paragraphs ? (
+              section.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+            ) : (
+              <>
+                <p>{section.teaser}</p>
+                <p className="text-sm italic text-[var(--ink-soft)]">
+                  To be filled in.
+                </p>
+              </>
+            )}
           </Section>
         ))}
       </main>

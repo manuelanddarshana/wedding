@@ -11,9 +11,9 @@ see `prerender` in `vite.config.ts`) and deployed to GitHub Pages via
 - `/events` (`src/routes/events.tsx`) — per-event dress code info
 - `/travel` (`src/routes/travel.tsx`) — post-wedding trip, accommodation,
   flights, visa, weather, RSVP
-- `/culture` (`src/routes/culture.tsx`) — Assam background and wedding
-  traditions; mostly placeholder sections (title + one-line teaser) as of
-  Aug 2026, real writeups to follow
+- `/culture` (`src/routes/culture.tsx`) — Assam, Guwahati, and food
+  background (real copy); "The Assamese Wedding" section is still a
+  placeholder (title + teaser, no `paragraphs`) as of Aug 2026
 
 `src/routes/__root.tsx` sets up the HTML shell and page metadata.
 `src/router.tsx` wires the generated route tree (`src/routeTree.gen.ts`,

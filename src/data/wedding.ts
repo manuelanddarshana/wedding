@@ -186,33 +186,38 @@ export const goaPinterestUrl = 'https://www.pinterest.de/sciencebyteswithliza/go
 
 export type CultureSection = {
   title: string
+  // Full body copy, one entry per paragraph. Omit (leave undefined) for
+  // sections not written yet — those fall back to `teaser` + a "to be
+  // filled in" placeholder on the page.
+  paragraphs?: string[]
   teaser: string
 }
 
-// Placeholder content for the Assam & Traditions page — teaser line per
-// section, to be filled in with real writeups later.
 export const cultureSections: CultureSection[] = [
   {
-    title: 'Assam & the Northeast',
+    title: 'Assam',
     teaser:
-      "Where Assam sits within India, and how the Northeast differs culturally from what most people picture as \"India.\"",
+      "Where Assam sits within India, the Northeast's cultural diversity, and the landscape shaping it.",
+    paragraphs: [
+      "Assam is home to more than 30 million people. It's connected to the rest of India only via the \"Chicken's Neck,\" a narrow 22 km strip of land. Since this corridor is the sole land link between the Northeast and mainland India, Assam, and Guwahati in particular, has become a natural hub and gateway for the whole region.",
+      "Culturally, Assam differs quite a bit from mainland India. The language, Assamese, even uses a distinct script. This diversity defines the Northeast as a whole, with dozens of distinct languages and ethnic groups, many belonging to the Tibeto-Burman family rather than the Indo-Aryan languages of the Indian mainland, and each with their own customs, dress, and cuisine.",
+      "The landscape is dominated by the valley of the Brahmaputra, one of the largest rivers in the world. Assam is bordered by hills and mountains on all sides: Arunachal Pradesh to the north, Meghalaya to the south, and Nagaland to the east. Assam is squeezed tightly between the Bay of Bengal and the Himalayas, and this in-between position keeps its climate fairly temperate year-round.",
+    ],
   },
   {
-    title: 'Guwahati & the Brahmaputra',
-    teaser: 'The city hosting the wedding, and the river that shapes it.',
+    title: 'Guwahati',
+    teaser: 'The city hosting the wedding.',
+    paragraphs: [
+      'Guwahati is the capital of Assam, with more than 1 million inhabitants, and one of the fastest-growing cities in India. This shows in the constant construction — bridges, flyovers, and other infrastructure projects — underway throughout the city, including the new airport that recently opened. Traffic is usually decent though, thanks to the flyovers.',
+    ],
   },
   {
-    title: 'Landscape',
-    teaser: 'Tea gardens, the Brahmaputra valley, and the hills toward Meghalaya.',
-  },
-  {
-    title: 'Food & Tea',
+    title: 'Food',
     teaser: 'Assamese culinary tradition, distinct from North and South Indian cuisine.',
-  },
-  {
-    title: 'Bihu & Dance',
-    teaser:
-      "Assam's biggest festival, and the folk dance and music tradition behind our Sangeet performances.",
+    paragraphs: [
+      'Assamese food differs noticeably from typical North Indian cuisine. It features a wide variety of vegetables, fermented dishes, and fish, and is generally less heavily spiced than the North Indian dishes known in the West. Assam tea, meanwhile, is strong and traditionally served with milk, sugar, and spices.',
+      "Given how diverse the Northeast is, the food changes a lot from state to state too. Naga cuisine, for example, is known for its use of pork, bamboo shoot, and very hot chillies, and can be found in Guwahati. On our trip, we'll also get to try food from Meghalaya, known among other things for its own take on smoked meats and rice dishes.",
+    ],
   },
   {
     title: 'The Assamese Wedding',
