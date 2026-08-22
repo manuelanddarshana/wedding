@@ -46,7 +46,16 @@ Fonts: Fraunces (display/headings) and Karla (body), loaded via Google
 Fonts `@import` in `src/styles.css`.
 
 Decorative line-art (leaf sprig, berry cluster) lives in
-`src/components/Motifs.tsx` as inline SVG — no external image assets.
+`src/components/Motifs.tsx` as inline SVG.
+
+Raster images (e.g. the landing page banner) live in `src/assets/` and are
+imported directly (`import banner from '@/assets/name.webp'`) so Vite
+hashes/bundles them. Convert to WebP and compress before adding one —
+raw exports (PNG screenshots, design tool output) are often several MB;
+CaesiumCLT (`caesiumclt -q 85 --format webp -o <dir> <file>`) got the
+current banner from ~2MB to ~210KB with no visible quality loss. Keep
+uncompressed originals in the repo-root `assets/` folder (gitignored,
+local-only) rather than committing them.
 
 ## Conventions
 

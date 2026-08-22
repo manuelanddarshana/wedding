@@ -3,3 +3,7 @@ dist/
 .vscode/
 *.log
 claude.local.md
+
+# Raw/uncompressed design source files (e.g. banner originals) — keep
+# locally, only the optimized version in src/assets/ goes into the repo.
+/assets/

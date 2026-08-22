@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/SiteFooter'
 import { LeafSprig, BerryCluster } from '@/components/Motifs'
 import { Timeline } from '@/components/Timeline'
 import { schedule, venues, rsvpUrl } from '@/data/wedding'
+import banner from '@/assets/strawberry_matcha_banner.webp'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -32,9 +33,15 @@ function Home() {
           <p className="rise rise-1 text-xs uppercase tracking-[0.35em] text-[var(--matcha-deep)]">
             We are getting married
           </p>
-          <h1 className="font-display rise rise-2 mt-5 text-5xl leading-[1.05] text-[var(--ink)] sm:text-7xl">
-            Darshana <span className="italic text-[var(--strawberry-deep)]">&amp;</span> Manuel
-          </h1>
+          <h1 className="sr-only">Darshana Kalita &amp; Manuel Brenner</h1>
+          <img
+            src={banner}
+            alt="Darshana Kalita & Manuel Brenner — Monday, 8 February 2027, Aroohan Serenity Resort, Guwahati"
+            width={1774}
+            height={887}
+            loading="eager"
+            className="rise rise-2 mt-6 w-full rounded-3xl"
+          />
           <p className="rise rise-3 mt-6 text-lg text-[var(--ink-soft)]">
             6 – 8 February · Guwahati, Assam, India
           </p>
