@@ -7,7 +7,7 @@ export function SiteNav() {
         to="/"
         className="font-display text-lg tracking-wide text-[var(--strawberry-deep)]"
       >
-        Dr. <span className="text-[var(--matcha-deep)]">&amp;</span> Dr.
+        D <span className="text-[var(--matcha-deep)]">&amp;</span> M
       </Link>
       <nav className="flex items-center gap-5 text-sm tracking-wide sm:gap-8">
         <Link
