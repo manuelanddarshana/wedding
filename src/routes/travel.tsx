@@ -99,9 +99,20 @@ function Travel() {
 
         <Section title="Accommodation">
           <p>
-            We are booking accommodation for the four main wedding nights (
-            5–9 February), two nights close to the Kalita home and then within Aroohan Serenity Resort or close by for the nights
-            around the wedding day. We are also happy to help with arranging accomodation before/after the wedding depending on your plans.
+            We are booking three nights: check-in 6 February, check-out 9
+            February.
+          </p>
+          <p>
+            <strong className="text-[var(--ink)]">6–7 Feb (Sat–Sun), 1 night:</strong>{' '}
+            close to the Kalita home.
+          </p>
+          <p>
+            <strong className="text-[var(--ink)]">7–9 Feb (Sun–Tue), 2 nights:</strong>{' '}
+            within Aroohan Serenity Resort or close by.
+          </p>
+          <p>
+            We're also happy to help arranging accommodation outside these
+            dates depending on your plans.
           </p>
         </Section>
 
