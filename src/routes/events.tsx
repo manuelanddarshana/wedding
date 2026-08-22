@@ -4,7 +4,7 @@ import { SiteFooter } from '@/components/SiteFooter'
 import { LeafSprig } from '@/components/Motifs'
 import { Section } from '@/components/Section'
 import { PinterestBoard } from '@/components/PinterestBoard'
-import { events, dressCodeNotes } from '@/data/wedding'
+import { events, dressCodeNotes, shoppingTripDetails } from '@/data/wedding'
 
 export const Route = createFileRoute('/events')({
   component: Events,
@@ -31,10 +31,19 @@ function Events() {
         </h1>
         <p className="rise rise-3 mt-4 text-[var(--ink-soft)]">
           A rough guide per event, with a Pinterest board for inspiration.
-          Two things to keep in mind throughout:
         </p>
 
-        <div className="rise rise-4 mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="rise rise-4 mt-6 rounded-2xl bg-[var(--matcha-mist)] p-5 text-sm text-[var(--ink-soft)]">
+          <p>
+            <strong className="text-[var(--matcha-deep)]">Outfit shopping — 5 February:</strong>{' '}
+            {shoppingTripDetails}
+          </p>
+        </div>
+
+        <p className="mt-8 text-sm uppercase tracking-wider text-[var(--ink-soft)]">
+          Two things to keep in mind throughout
+        </p>
+        <div className="mt-3 grid gap-4 sm:grid-cols-2">
           {dressCodeNotes.map((note) => (
             <div
               key={note}

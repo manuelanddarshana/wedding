@@ -24,6 +24,12 @@ export const postWeddingSchedule: ScheduleItem[] = [
 
 export const schedule: ScheduleItem[] = [
   {
+    date: '5 Feb',
+    time: 'Daytime',
+    title: 'Outfit Shopping (voluntary)',
+    note: 'A group trip into Guwahati to shop for wedding outfits together — entirely optional, join if you like.',
+  },
+  {
     date: '6 Feb',
     time: 'Afternoon',
     title: 'Henna (Mehndi)',
@@ -101,6 +107,11 @@ export type EventInfo = {
   dressCodeDetails: string
   pinterestUrl: string
 }
+
+// Shown at the top of the Events & Dress Code page, above the general
+// notes and the per-event breakdown.
+export const shoppingTripDetails =
+  "We'll organize a voluntary group trip into Guwahati on 5 February to shop for outfits together. Clothes in India can be very affordable — some pieces from as little as 10–20€ — and it's also a good opportunity to pick up something fancier to take home. Entirely optional, of course."
 
 // General notes shown at the top of the Events & Dress Code page, above
 // the per-event breakdown.
